@@ -1,0 +1,224 @@
+% resume.tex
+% Credit for this template goes to Jeremy Edberg
+% Jarrid Rector-Brooks <jrectorb@umich.edu> 2018
+
+%%%%%%%%%%%%
+% Basic setup
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{setspace}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0in}
+\hyphenchar\font=-1
+\usepackage{geometry} 
+\geometry{a4paper, twoside} 
+\setstretch{1}
+\usepackage{booktabs}
+\usepackage{topcapt}
+%\raggedbottom
+%\raggedright
+\usepackage{tabulary}
+\usepackage{hyphenat}
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+%%%%%%%%%%%%
+
+%%%%%%%%%%%%
+% PDF setup
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+  \makeatletter\let\@bibitem\saved@bibitem\makeatother
+\else
+  \usepackage[hypertex]{hyperref}
+  \makeatletter\let\@bibitem\saved@bibitem\makeatother
+\fi
+\hypersetup{
+    letterpaper,
+    colorlinks,
+    urlcolor=black,
+    pdfpagemode=none,
+    pdftitle={Resume},
+    pdfauthor={Jarrid Rector-Brooks},
+    pdfsubject={Resume},
+    pdfkeywords={
+        Artificial Intelligence, Optimization, Systems, Facebook, Microsoft,
+        Akuna Capital, Distributed Systems, Profiling Tools
+    }
+}
+%%%%%%%%%%%%
+
+%%%%%%%%%%%%
+% Margin setup
+\oddsidemargin  -0.5in
+\evensidemargin -0.5in
+\textwidth      7.2in
+\headheight     -0.7in
+\topmargin      0.0in
+\textheight=10.7in
+%\footheight 1.0in 
+%%%%%%%%%%%%
+
+\begin{document}
+
+%% Bib setup
+\nobibliography{JarridRectorBrooksResume}
+\bibliographystyle{ieeetr}
+
+%% Heading
+\begin{center}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcr}
+&\huge{\textbf{\sc{Jarrid Rector-Brooks}}}&\\
+jrectorb@umich.edu &  & Mobile: (517) 798-7394\\
+\hline\hline
+\end{tabular*}
+\end{center}
+
+%% Education Section
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+\large {\sc {Education}}\\
+\hline
+\end{tabular*}
+
+%% UMich B.Sc.
+\noindent 
+\\
+%\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{University of Michigan -- Ann Arbor} & \emph{September 2013 - December 2017} \\
+\emph{Bachelor's of Science in Computer Science with Honors}  \\
+\end{tabular*}
+{\small
+
+\noindent
+
+\begin{list}{$\bullet$}{
+%\setlength{\itemsep}{ -5pt}
+%\setlength{\partopsep}{ -18pt}
+}
+\item \underline{Thesis:} ``Using Profiling to Analyze Latency Variance''
+\item \underline{Relevant Courses:} Discrete Mathematics, Data Structures and Algorithms, Introduction to Computer Organization, Operating Systems, Web Databases and Information Systems, Machine Learning, Distributed Systems
+\item \underline{GPA:} 3.63
+
+\end{list}
+}
+
+%% Publications
+\noindent
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+\large {\sc {Publications}}\\
+\hline
+\end{tabular*}
+\\
+
+\noindent 
+\bibentry{myFWPaper}
+
+%% Education and Training
+\noindent
+\\
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+\large {\sc {Work Experience}}\\
+\hline
+\end{tabular*}
+
+%% UMich Research Assistant
+\noindent 
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Research Assistant}, Ann Arbor, MI, USA & \emph{January 2017 to Present} \\
+\emph{Fully Autonomous \& Infinitely Scalable Lab, Advised by Professor Barzan Mozafari} 
+\end{tabular*}
+{\small
+
+\noindent
+\begin{itemize}
+    \item Helped build and open source a profiler (VProfiler) which measures root causes of variance for an arbitrary software system (given the system is written in C or C++).
+    \item VProfiler found issues deep within MySQL.  Through this discovery, changes were made to MySQL which are now included in all MySQL distributions and default on MariaDB distributions.
+    \item Currently working on a novel travel search engine.
+\end{itemize}
+}
+
+%% Facebook Internship
+\noindent 
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Facebook, Software Engineering Intern}, Menlo Park, CA, USA & \emph{May 2017 to August 2017} \\
+\emph{Ads Ranking Team} 
+\end{tabular*}
+{\small
+
+\noindent
+\begin{itemize}
+    \item Built tool for automated model selection.
+    \item Built tool which automated augmentation of various types of features.
+    \item Ran an internal machine learning reading group.
+\end{itemize}
+}
+
+%% Microsoft Internship
+\noindent 
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Microsoft, Software Engineering Intern}, Sunnyvale, CA, USA & \emph{May 2016 to August 2016} \\
+\emph{Serving Team, Bing Product Ads Division} 
+\end{tabular*}
+{\small
+
+\noindent
+\begin{itemize}
+    \item Developed logging systems in C++ and C\# leveraging  Event Tracing for Windows to enable enhanced management of large scale log data.
+    \item Created a UI utilizing AngularJS and Vega-Lite to provide easy trend analysis of log data.
+    \item Tested critical pieces of software in new logging system.
+\end{itemize}
+}
+
+%% Akuna Internship
+\noindent 
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Akuna Capital, Software Engineering Intern}, Chicago, IL, USA & \emph{May 2015 to August 2015} \\
+\emph{Trading Engine Team} 
+\end{tabular*}
+{\small
+
+\noindent
+\begin{itemize}
+    \item Built configuration manager using Python which generates, optimizes, and enforces invariants on trading engine configurations.
+    \item Developed API to permit easy interface into configuration manager, allowing simple creation of new invariants and optimizations.
+    \item Created a UI to allow easy access to a trading engine configuration's state.
+\end{itemize}
+}
+
+\newpage
+
+%% Skills
+\noindent
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+\large {\sc {Skills}}\\
+\hline
+\end{tabular*}
+
+\begin{description}
+    \item[Programming Languages:] \hfill \\
+        {\small C++, C, C\#, Python, Javascript, Go, Java, MATLAB, \LaTeX}
+
+    \item[Operating Systems:] \hfill \\
+        {\small Linux/Unix, OS X, Windows}
+
+    \item[Frameworks \& Technologies:] \hfill \\
+        {\small
+            Vim, Git, Numpy, MapReduce, Hive, .NET Framework, CPlex, Celery, 
+            Apache HTTP Server, Django, SQL, HQL, LLVM
+        }
+
+    \item[Languages:] \hfill \\
+        {\small English: native, German: elementary}
+
+\end{description}
+
+\end{document}
