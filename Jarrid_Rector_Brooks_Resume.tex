@@ -1,0 +1,215 @@
+% resume.tex
+% Credit for this template goes to Jeremy Edberg
+% Jarrid Rector-Brooks <jrectorb@umich.edu> 2018
+
+%%%%%%%%%%%%
+% Basic setup
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{setspace}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0in}
+\hyphenchar\font=-1
+\usepackage{geometry} 
+\geometry{a4paper, twoside} 
+\setstretch{1}
+\usepackage{booktabs}
+\usepackage{topcapt}
+%\raggedbottom
+%\raggedright
+\usepackage{tabulary}
+\usepackage{hyphenat}
+\usepackage{bibentry}
+%%%%%%%%%%%%
+
+%%%%%%%%%%%%
+% PDF setup
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+\else
+  \usepackage[hypertex]{hyperref}
+\fi
+\hypersetup{
+    letterpaper,
+    colorlinks,
+    urlcolor=black,
+    pdfpagemode=none,
+    pdftitle={Resume},
+    pdfauthor={Jarrid Rector-Brooks},
+    pdfsubject={Resume},
+    pdfkeywords={
+        Artificial Intelligence, Optimization, Systems, Facebook, Microsoft,
+        Akuna Capital, Distributed Systems, Profiling Tools
+    }
+}
+%%%%%%%%%%%%
+
+%%%%%%%%%%%%
+% Margin setup
+\oddsidemargin  -0.5in
+\evensidemargin -0.5in
+\textwidth      7.2in
+\headheight     -0.7in
+\topmargin      0.0in
+\textheight=10.7in
+%\footheight 1.0in 
+%%%%%%%%%%%%
+
+\begin{document}
+
+%% Bib setup
+\nobibliography{Jarrid\_Rector\_Brooks\_Resume}
+\bibliographystyle{ieeetr}
+
+%% Heading
+\begin{center}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcr}
+&\huge{\textbf{\sc{Jarrid Rector-Brooks}}}&\\
+jrectorb@umich.edu &  & Mobile: (517) 798-7394\\
+\hline\hline
+\end{tabular*}
+\end{center}
+
+%% Education Section
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+\large {\sc {Education}}\\
+\hline
+\end{tabular*}
+
+% reddit
+\noindent 
+\\
+%\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{University of Michigan - Ann Arbor} & \emph{September 2013 - December 2017} \\
+\emph{Bachelor's of Science in Computer Science with Honors}  \\
+\end{tabular*}
+{\small
+
+\noindent
+
+\begin{list}{$\bullet$}{
+%\setlength{\itemsep}{ -5pt}
+%\setlength{\partopsep}{ -18pt}
+}
+\item \underline{Thesis:} "Using Profiling to Analyze Latency Variance"
+\item \underline{Relevant Courses:} Discrete Mathematics, Data Structures and Algorithms, Introduction to Computer Organization, Operating Systems, Web Databases and Information Systems, Machine Learning, Distributed Systems
+\item \underline{GPA:} 3.64
+
+\end{list}
+}
+
+%% Publications
+\noindent
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+\large {\sc {Publications}}\\
+\hline
+\end{tabular*}
+\\
+
+\noindent 
+\bibentry{myFWPaper}
+
+%% Education and Training
+\noindent
+\\
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+\large {\sc {Education \& Training}}\\
+\hline
+\end{tabular*}
+
+%UC Berkeley
+\noindent 
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{University of California, Berkeley} & \emph{January 1996 to December 1998} \\
+\emph{BA, Cognitive Science} & \emph{May 2002 to May 2003}
+\end{tabular*}
+{\small
+
+\noindent
+Emphasis in Cognitive Linguistics.  Took time off to start my own business, gain work experience and keep skills current.  Selected upper division coursework included: Cognitive Linguistics, Artificial Intelligence, Neural Theory of Language, Cognitive Metaphors, Cognitive Neuroscience, Consciousness and Phonetics and Phonology.
+}
+
+%ArcSight
+\noindent
+\\  
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{ArcSight Security Analyst Certification} -- \emph{ArcSight On-Site Training} & Cupertino, CA, \emph{April 2006}
+\end{tabular*}
+
+%SANS
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Forensics, Investigation and Response Certification} -- \emph{SANS Great Lakes} & Chicago, IL, \emph{May 2004}
+\end{tabular*}
+
+%Sun
+\noindent 
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Solaris Sysadmin Fast Track Certification} -- \emph{Sun Education Services} & Boston, MA, \emph{December 2000}
+\end{tabular*}
+
+%% Other Activities
+\noindent
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+\large {\sc {Other Activities}}\\
+\hline
+\end{tabular*}
+
+%Year One Labs
+\noindent 
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Year One Labs} -- \emph{Mentor} & Montr\'eal, QC, CA, \emph{July 2010 to Present}
+\end{tabular*}
+
+{\small
+
+\noindent
+Advisor to member startups; provide domain knowledge and expertise in the areas of operations and scaling as well as product and social media marketing.
+}
+
+%eBay Foundation
+\noindent 
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{eBay Foundation} -- \emph{Member -- Grant Review Comittee} & San Jose, CA, \emph{October 2005 to October 2006}
+\end{tabular*}
+{\small
+
+\noindent
+Member of a small group who reviewed grant proposals submitted to the Foundation by eBay employees. Helped determine whether to award grants to the organizations and how much to award.  Grants were evaluated in areas such as program budget, leverage of grant money, measurable outcomes and other related categories.
+}
+
+
+%Blue Hills
+\noindent 
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Blue Hills School} -- \emph{Classroom volunteer} & Saratoga, CA, \emph{August 2004 to Present}
+\end{tabular*}
+{\small
+
+\noindent
+Classroom volunteer for a 4th grade classroom.  Help prepare science lessons, grade papers, prepare art projects, lead enrichment lessons and chaperone field trips, as well as any other duties helpful to the classroom teacher.
+}
+
+%Acmeinter.Net
+\noindent 
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Acmeinter.Net} -- \emph{Volunteer System Administrator / Founder} & Cupertino, CA, \emph{May 1998 to Present}
+\end{tabular*}
+{\small
+
+\noindent
+Acmeinter.Net provides web space and email services for non-mainstream publications and other non-profit organizations.  Before December 1999, it was a for profit ISP.  My responsibilities included the development and continuing maintenance of the ISP serving approximately 25 customers; planning and implementation of all network infrastructure; and creating budgets for the purchase of computer equipment and connectivity fees.  Responsibilities still include maintenance of the mail server, webserver, firewall and database.\\
+}
+
+
+\end{document}
