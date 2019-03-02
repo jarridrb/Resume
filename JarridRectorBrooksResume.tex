@@ -4,7 +4,7 @@
 
 %%%%%%%%%%%%
 % Basic setup
-\documentclass[11pt]{article}
+\documentclass[a4paper]{article}
 \usepackage{fullpage}
 \usepackage{setspace}
 \pagestyle{empty}
@@ -68,8 +68,9 @@
 %% Heading
 \begin{center}
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcr}
-&\huge{\textbf{\sc{Jarrid Rector-Brooks}}}&\\
-jrectorb@umich.edu &  & Mobile: (517) 798-7394\\
+    &\huge{\textbf{\sc{Jarrid Rector-Brooks}}}&\\
+    &&\\
+    Email: jrectorb@umich.edu & Github: \url{https://github.com/jrectorb} & Mobile: (517) 798-7394\\
 \hline\hline
 \end{tabular*}
 \end{center}
@@ -84,7 +85,6 @@ jrectorb@umich.edu &  & Mobile: (517) 798-7394\\
 %% UMich B.Sc.
 \noindent 
 \\
-%\\
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 \textbf{University of Michigan -- Ann Arbor} & \emph{September 2013 - December 2017} \\
 \emph{Bachelor's of Science in Computer Science with Honors}  \\
@@ -98,27 +98,17 @@ jrectorb@umich.edu &  & Mobile: (517) 798-7394\\
 %\setlength{\partopsep}{ -18pt}
 }
 \item \underline{Thesis:} ``Using Profiling to Analyze Latency Variance''
-\item \underline{Relevant Courses:} Discrete Mathematics, Data Structures and Algorithms, Introduction to Computer Organization, Operating Systems, Web Databases and Information Systems, Machine Learning, Distributed Systems
+\item \underline{Relevant Courses:} Discrete Mathematics, Data Structures and 
+                                    Algorithms, Introduction to Computer Organization, 
+                                    Operating Systems, Web Databases and Information 
+                                    Systems, Machine Learning, Distributed Systems
 \item \underline{GPA:} 3.63
 
 \end{list}
 }
 
-%% Publications
-\noindent
-\\
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
-\large {\sc {Publications}}\\
-\hline
-\end{tabular*}
-\\
-
-\noindent 
-\bibentry{myFWPaper}
-
 %% Education and Training
 \noindent
-\\
 \\
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
 \large {\sc {Work Experience}}\\
@@ -129,7 +119,7 @@ jrectorb@umich.edu &  & Mobile: (517) 798-7394\\
 \noindent 
 \\
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-\textbf{Research Assistant}, Ann Arbor, MI, USA & \emph{January 2017 to Present} \\
+\textbf{Research Associate}, Ann Arbor, MI, USA & \emph{January 2017 to February 2019} \\
 \emph{Fully Autonomous \& Infinitely Scalable Lab, Advised by Professor Barzan Mozafari} 
 \end{tabular*}
 {\small
@@ -137,8 +127,9 @@ jrectorb@umich.edu &  & Mobile: (517) 798-7394\\
 \noindent
 \begin{itemize}
     \item Helped build and open source a profiler (VProfiler) which measures root causes of variance for an arbitrary software system (given the system is written in C or C++).
-    \item VProfiler found issues deep within MySQL.  Through this discovery, changes were made to MySQL which are now included in all MySQL distributions and default on MariaDB distributions.
-    \item Currently working on a novel travel search engine.
+    \item VProfiler found issues deep within MySQL\@.  Through this discovery, changes were made to MySQL which are now included in all MySQL distributions and default on MariaDB distributions, impacting over 2 million installations worldwide.
+    \item Wrote and published a paper in AAAI-19 deriving new, state-of-the-art convergence rates for the Frank-Wolfe algorithm.
+    \item Built a novel search engine enabling declarative travel.
 \end{itemize}
 }
 
@@ -193,7 +184,17 @@ jrectorb@umich.edu &  & Mobile: (517) 798-7394\\
 \end{itemize}
 }
 
-\newpage
+%% Publications
+\noindent
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+\large {\sc {Publications}}\\
+\hline
+\end{tabular*}
+\\
+
+\noindent 
+\bibentry{myFWPaper}
 
 %% Skills
 \noindent
@@ -215,9 +216,6 @@ jrectorb@umich.edu &  & Mobile: (517) 798-7394\\
             Vim, Git, Numpy, MapReduce, Hive, .NET Framework, CPlex, Celery, 
             Apache HTTP Server, Django, SQL, HQL, LLVM
         }
-
-    \item[Languages:] \hfill \\
-        {\small English: native, German: elementary}
 
 \end{description}
 
