@@ -5,7 +5,7 @@ pdf:
 	bibtex ${filename}
 	pdflatex ${filename}
 	pdflatex ${filename}
-	wslview ${filename}.pdf
+	open ${filename}.pdf
 
 clean:
 	rm -f ${filename}.{ps,pdf,log,aux,out,dvi,blg}
